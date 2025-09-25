@@ -6,81 +6,74 @@
 </head>
 <body>
 
-    <h1>Welcome to the Web Programming Course! 📚</h1>
+    <div class="header">
+        <h1>Welcome to Web Programming 2 Course</h1>
+        <p><b>Student Name:</b> Muhammad Rafi Ramadhan Kartika</p>
+        <p><b>Student ID:</b> muhammad.rafi.ft23@mail.umy.ac.id</p>
+    </div>
 
-    <p><b>Student Name:</b> Muhammad Rafi ramadhan Kartika</p>
-    <p><b>Student ID:</b> Muhammad.rafi.ft23@mail.umy.ac.id</p>
-    <p><b>student gmail : </b> raficool271003@gmail.com</p>
+    <div class="nav-container">
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+      
+    </div>
 
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">this is hr change that i made</a></li>
-    </ul>
+    <div class="container">
+        <h2>About HTML</h2>
+        <p class="highlight">HTML stands for HyperText Markup Language:</p>
+        <p>It is the standard language for creating web pages.</p>
 
-    <h2>About HTML</h2>
+        <div class="main-content">
+            <div class="image-section">
+                <img src="https://picsum.photos/200/300" alt="Random placeholder image from picsum.photos">
+                <p>Src: https://picsum.photos/200/300</p>
+            </div>
+            <div class="form-section">
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <input type="submit" value="Send">
+                </form>
 
-    <p>HTML stands for HyperText Markup Language.</p>
-    <p>It is the <i>standard</i> language for creating web pages.</p>
+                <div class="send-button-container">
+                     <button class="send-button">Send</button>
+                </div>
+            </div>
+        </div>
 
-    <img src="https://picsum.photos/200/300" alt="Random placeholder image from picsum.photos">
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>Course</th>
+            <th>Grade</th>
+          </tr>
+          <tr>
+            <td>1001</td>
+            <td>Web Programming</td>
+            <td class="grade-a">A</td>
+          </tr>
+          <tr>
+            <td>1002</td>
+            <td>Database</td>
+            <td class="grade-b">B+</td>
+          </tr>
+          <tr>
+            <td>1003</td>
+            <td>Algorithms</td>
+            <td class="grade-a-minus">A-</td>
+          </tr>
+        </table>
+        <div class="shape">
+            Web programming 2
+        </div>
+    </div>
 
-    <p>Src: https://picsum.photos/200/300</p>
-
-    <hr>
-
-    <p>Your grade: A+ 🏆</p>
-    <button type="submit">Submit 💾</button>
-    <p>Have a nice day! 😊</p>
-
-    <h2>Sample Article</h2>
-    <p>This is an article section with an ordered list:</p>
-    <ol>
-        <li>Introduction</li>
-        <li>Details</li>
-        <li>Summary</li>
-    </ol>
-
-    <h2>Contact Form</h2>
-    <form>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name"><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br>
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
-        <input type="submit" value="Send">
-    </form>
-
-    <br>
-
-    <table border="1" style="width:100%; border-collapse: collapse;">
-      <tr>
-        <th>Student Name</th>
-        <th>ID</th>
-        <th>Course</th>
-        <th>Grade</th>
-      </tr>
-      <tr>
-        <td>Alice Nguyen</td>
-        <td>1001</td>
-        <td>Web Programming</td>
-        <td>A</td>
-      </tr>
-      <tr>
-        <td>Bob Tran</td>
-        <td>1002</td>
-        <td>Database</td>
-        <td>B+</td>
-      </tr>
-      <tr>
-        <td>Charlie Le</td>
-        <td>1003</td>
-        <td>Algorithms</td>
-        <td>A-</td>
-      </tr>
-    </table>
+    <footer>
+        <p>© 2025 Web Programming Course</p>
+    </footer>
 
 </body>
 </html>
-

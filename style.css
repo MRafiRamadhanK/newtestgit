@@ -5,115 +5,185 @@ body, h1, h2, h3, p, ul, li {
     box-sizing: border-box;
 }
 
-
-
 /* Body styling */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    /* Add a colorful gradient background */
-    background: linear-gradient(135deg, #f4f6f8 0%, #a1c4fd 40%, #c2e9fb 100%);
-    color: #222;
+    color: #333;
     line-height: 1.6;
-    min-height: 100vh;
 }
 
-/* ...existing code... */
-
-/* Container */
-.container {
-    max-width: 900px;
-    margin: 40px auto;
-    background: #fff;
-    padding: 32px 24px;
-    border-radius: 12px;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: left;
 }
 
-/* Headings */
-h1, h2, h3 {
-    color: #2a7ae2;
-    margin-bottom: 16px;
+.header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-h1 {
-    font-size: 2.5rem;
+.nav-container {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.nav {
+    list-style: none;
+    padding: 5px 0;
+    margin: 0;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    display: inline-block;
+}
+
+.nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #007bff;
     font-weight: bold;
 }
 
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
 h2 {
-    font-size: 1.8rem;
-    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
 }
 
-h3 {
-    font-size: 1.3rem;
-    font-weight: 500;
+.highlight {
+    background-color: #fff3cd;
+    border-left: 5px solid #ffc107;
+    padding: 10px;
+    margin-bottom: 15px;
 }
 
-/* Paragraphs */
-p {
-    margin-bottom: 16px;
+.main-content {
+    display: flex;
+    margin-bottom: 20px;
 }
 
-/* Links */
-a {
-    color: #2a7ae2;
-    text-decoration: none;
-    transition: color 0.2s;
+.image-section {
+    flex: 1;
+    padding-right: 20px;
 }
 
-a:hover {
-    color: #174a8b;
-    text-decoration: underline;
+.image-section img {
+    max-width: 100%;
+    height: auto;
 }
 
-/* Buttons */
-button, .btn {
-    background: #2a7ae2;
-    color: #fff;
-    border: none;
-    padding: 10px 22px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background 0.2s;
+.form-section {
+    flex: 2;
 }
 
-button:hover, .btn:hover {
-    background: #174a8b;
+form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-/* Lists */
-ul {
-    margin-bottom: 16px;
-    padding-left: 24px;
+form label {
+    margin-right: 10px;
 }
 
-li {
-    margin-bottom: 8px;
-}
-
-/* Forms */
-input, textarea, select {
-    width: 100%;
-    padding: 8px 10px;
-    margin-bottom: 14px;
+form input[type="text"] {
+    flex-grow: 1;
+    padding: 8px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
+    border-radius: 4px;
 }
 
-input:focus, textarea:focus, select:focus {
-    border-color: #2a7ae2;
-    outline: none;
+form input[type="submit"] {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-    .container {
-        padding: 16px 8px;
-    }
-    h1 {
-        font-size: 2rem;
-    }
+.send-button-container {
+    text-align: left;
+}
+
+.send-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 100px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #dee2e6;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.grade-a {
+    color: green;
+}
+
+.grade-b {
+    color: orange;
+}
+
+.grade-a-minus {
+    color: #338a3e;
+}
+
+.shape {
+    width: 150px;
+    height: 100px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    clip-path: polygon(0% 25%, 15% 25%, 15% 0%, 85% 0%, 85% 25%, 100% 25%, 100% 75%, 85% 75%, 85% 100%, 15% 100%, 15% 75%, 0% 75%);
+    margin: 20px auto;
+    padding: 10px;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
 }
